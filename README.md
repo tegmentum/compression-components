@@ -80,29 +80,24 @@ This repository serves as an index for WebAssembly Component Model implementatio
 **Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
 
 #### S2
-**Repository**: [tegmentum/s2-wasm](https://github.com/tegmentum/s2-wasm)
-**Best for**: Better Snappy alternative with improved ratios
-**Compression Ratio**: ★★★★☆ | **Speed**: ★★★★★
-
-#### LZFSE
-**Repository**: [tegmentum/lzfse-wasm](https://github.com/tegmentum/lzfse-wasm)
-**Best for**: Apple platforms, modern balanced algorithm
-**Compression Ratio**: ★★★★☆ | **Speed**: ★★★★☆
+**Status**: ❌ Not Implementable
+**Reason**: No Rust implementation available (Go-only from Klaus Post)
+**Alternative**: Use Snappy (backward compatible for decompression)
 
 #### PPMd
-**Repository**: [tegmentum/ppmd-wasm](https://github.com/tegmentum/ppmd-wasm)
-**Best for**: Extreme text compression, archives
-**Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
+**Status**: ❌ Not Implementable
+**Reason**: Available Rust crate (`ppmd-core`) only supports file-based operations, lacks buffer API
+**Alternative**: Use LZMA/LZMA2 for high-ratio text compression
 
 #### Lizard
-**Repository**: [tegmentum/lizard-wasm](https://github.com/tegmentum/lizard-wasm)
-**Best for**: LZ4 derivative with better compression
-**Compression Ratio**: ★★★★☆ | **Speed**: ★★★★☆
+**Status**: ❌ Not Implementable
+**Reason**: Obsolete algorithm, no Rust implementation, no longer maintained
+**Alternative**: Use LZ4, LZ4HC, or Zstandard for better performance
 
 #### Blosc
-**Repository**: [tegmentum/blosc-wasm](https://github.com/tegmentum/blosc-wasm)
-**Best for**: Scientific/numerical data, meta-compressor with blocking
-**Compression Ratio**: ★★★★☆ | **Speed**: ★★★★☆
+**Status**: ❌ Not Implementable
+**Reason**: Requires C bindings, wraps algorithms already available (LZ4, Snappy, Zstd)
+**Alternative**: Use the individual compression algorithms directly
 
 ## Unified CLI Tool
 
