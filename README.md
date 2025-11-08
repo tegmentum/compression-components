@@ -61,22 +61,23 @@ This repository serves as an index for WebAssembly Component Model implementatio
 **Best for**: Better compression than LZ4, same fast decompression
 **Compression Ratio**: ★★★★☆ | **Speed**: ★★★☆☆ (compress) / ★★★★★ (decompress)
 
-### 📦 Repository Created (Implementation Needed)
+#### Density
+**Repository**: [tegmentum/density-wasm](https://github.com/tegmentum/density-wasm)
+**Best for**: Extremely fast compression (GB/s), real-time streaming
+**Compression Ratio**: ★★★☆☆ | **Speed**: ★★★★★
+**Algorithms**: Chameleon (fastest), Cheetah (balanced), Lion (best compression)
 
 #### LZO
 **Repository**: [tegmentum/lzo-wasm](https://github.com/tegmentum/lzo-wasm)
-**Best for**: Very fast decompression, real-time systems
-**Compression Ratio**: ★★★☆☆ | **Speed**: ★★★★★
+**Best for**: Kernel usage, embedded systems, fast decompression
+**Compression Ratio**: ★★★☆☆ | **Speed**: ★★★★☆ (compress) / ★★★★★ (decompress)
+
+### 📦 Repository Created (Implementation Needed)
 
 #### Zopfli
 **Repository**: [tegmentum/zopfli-wasm](https://github.com/tegmentum/zopfli-wasm)
 **Best for**: Maximum DEFLATE compression (slower encoding)
 **Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
-
-#### LZ4HC
-**Repository**: [tegmentum/lz4hc-wasm](https://github.com/tegmentum/lz4hc-wasm)
-**Best for**: Better compression than LZ4, same fast decompression
-**Compression Ratio**: ★★★★☆ | **Speed**: ★★★☆☆ (compress) / ★★★★★ (decompress)
 
 #### S2
 **Repository**: [tegmentum/s2-wasm](https://github.com/tegmentum/s2-wasm)
@@ -97,11 +98,6 @@ This repository serves as an index for WebAssembly Component Model implementatio
 **Repository**: [tegmentum/lizard-wasm](https://github.com/tegmentum/lizard-wasm)
 **Best for**: LZ4 derivative with better compression
 **Compression Ratio**: ★★★★☆ | **Speed**: ★★★★☆
-
-#### Density
-**Repository**: [tegmentum/density-wasm](https://github.com/tegmentum/density-wasm)
-**Best for**: Extremely fast compression with multiple modes
-**Compression Ratio**: ★★★☆☆ | **Speed**: ★★★★★
 
 #### Blosc
 **Repository**: [tegmentum/blosc-wasm](https://github.com/tegmentum/blosc-wasm)
