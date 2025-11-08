@@ -4,35 +4,110 @@ This repository serves as an index for WebAssembly Component Model implementatio
 
 ## Available Compression Algorithms
 
-### Brotli
+### ✅ Production Ready (With CLI Tools)
+
+#### Brotli
 **Repository**: [tegmentum/brotli-wasm](https://github.com/tegmentum/brotli-wasm)
-**Interface**: `tegmentum:compression-algorithm/compression-provider`
 **Best for**: HTTP compression, static assets, text and structured data
-**Compression Ratio**: ★★★★★
-**Speed**: ★★★☆☆
+**Compression Ratio**: ★★★★★ | **Speed**: ★★★☆☆
 
-### LZ4
+#### LZ4
 **Repository**: [tegmentum/lz4-wasm](https://github.com/tegmentum/lz4-wasm)
-**Interface**: `tegmentum:compression-algorithm/compression-provider`
 **Best for**: Real-time streaming, low latency requirements
-**Compression Ratio**: ★★★☆☆
-**Speed**: ★★★★★
+**Compression Ratio**: ★★★☆☆ | **Speed**: ★★★★★
 
-### DEFLATE
-**Repository**: [tegmentum/deflate-wasm](https://github.com/tegmentum/deflate-wasm)
-**Interface**: `tegmentum:compression-algorithm/compression-provider`
-**Best for**: ZIP files, PNG images, legacy compatibility
-**Compression Ratio**: ★★★★☆
-**Speed**: ★★★☆☆
-**Status**: Planned
-
-### Zstandard (ZSTD)
+#### ZSTD (Zstandard)
 **Repository**: [tegmentum/zstd-wasm](https://github.com/tegmentum/zstd-wasm)
-**Interface**: `tegmentum:compression-algorithm/compression-provider`
 **Best for**: Balanced compression and speed
-**Compression Ratio**: ★★★★☆
-**Speed**: ★★★★☆
-**Status**: Planned
+**Compression Ratio**: ★★★★☆ | **Speed**: ★★★★☆
+
+#### BZIP2
+**Repository**: [tegmentum/bzip2-wasm](https://github.com/tegmentum/bzip2-wasm)
+**Best for**: Archival, backup storage, text files
+**Compression Ratio**: ★★★★☆ | **Speed**: ★★★☆☆
+
+#### DEFLATE
+**Repository**: [tegmentum/deflate-wasm](https://github.com/tegmentum/deflate-wasm)
+**Best for**: ZIP files, PNG images, raw DEFLATE format
+**Compression Ratio**: ★★★★☆ | **Speed**: ★★★☆☆
+
+#### GZIP
+**Repository**: [tegmentum/gzip-wasm](https://github.com/tegmentum/gzip-wasm)
+**Best for**: .gz files, tar.gz archives, HTTP compression
+**Compression Ratio**: ★★★★☆ | **Speed**: ★★★☆☆
+
+### 🔧 Need Implementation/Fixes
+
+#### Snappy
+**Repository**: [tegmentum/snappy-wasm](https://github.com/tegmentum/snappy-wasm)
+**Best for**: Databases (RocksDB, LevelDB), low-latency compression
+**Compression Ratio**: ★★★☆☆ | **Speed**: ★★★★★
+**Status**: CLI written, library needs fixes
+
+#### LZMA
+**Repository**: [tegmentum/lzma-wasm](https://github.com/tegmentum/lzma-wasm)
+**Best for**: 7-Zip archives, maximum compression
+**Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
+**Status**: Needs CLI
+
+#### LZMA2
+**Repository**: [tegmentum/lzma2-wasm](https://github.com/tegmentum/lzma2-wasm)
+**Best for**: XZ archives, modern LZMA variant
+**Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
+**Status**: Needs CLI
+
+#### XZ
+**Repository**: [tegmentum/xz-wasm](https://github.com/tegmentum/xz-wasm)
+**Best for**: .xz files, Linux package compression
+**Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
+**Status**: Needs CLI
+
+### 📦 Repository Created (Implementation Needed)
+
+#### LZO
+**Repository**: [tegmentum/lzo-wasm](https://github.com/tegmentum/lzo-wasm)
+**Best for**: Very fast decompression, real-time systems
+**Compression Ratio**: ★★★☆☆ | **Speed**: ★★★★★
+
+#### Zopfli
+**Repository**: [tegmentum/zopfli-wasm](https://github.com/tegmentum/zopfli-wasm)
+**Best for**: Maximum DEFLATE compression (slower encoding)
+**Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
+
+#### LZ4HC
+**Repository**: [tegmentum/lz4hc-wasm](https://github.com/tegmentum/lz4hc-wasm)
+**Best for**: Better compression than LZ4, same fast decompression
+**Compression Ratio**: ★★★★☆ | **Speed**: ★★★☆☆ (compress) / ★★★★★ (decompress)
+
+#### S2
+**Repository**: [tegmentum/s2-wasm](https://github.com/tegmentum/s2-wasm)
+**Best for**: Better Snappy alternative with improved ratios
+**Compression Ratio**: ★★★★☆ | **Speed**: ★★★★★
+
+#### LZFSE
+**Repository**: [tegmentum/lzfse-wasm](https://github.com/tegmentum/lzfse-wasm)
+**Best for**: Apple platforms, modern balanced algorithm
+**Compression Ratio**: ★★★★☆ | **Speed**: ★★★★☆
+
+#### PPMd
+**Repository**: [tegmentum/ppmd-wasm](https://github.com/tegmentum/ppmd-wasm)
+**Best for**: Extreme text compression, archives
+**Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
+
+#### Lizard
+**Repository**: [tegmentum/lizard-wasm](https://github.com/tegmentum/lizard-wasm)
+**Best for**: LZ4 derivative with better compression
+**Compression Ratio**: ★★★★☆ | **Speed**: ★★★★☆
+
+#### Density
+**Repository**: [tegmentum/density-wasm](https://github.com/tegmentum/density-wasm)
+**Best for**: Extremely fast compression with multiple modes
+**Compression Ratio**: ★★★☆☆ | **Speed**: ★★★★★
+
+#### Blosc
+**Repository**: [tegmentum/blosc-wasm](https://github.com/tegmentum/blosc-wasm)
+**Best for**: Scientific/numerical data, meta-compressor with blocking
+**Compression Ratio**: ★★★★☆ | **Speed**: ★★★★☆
 
 ## Unified CLI Tool
 
