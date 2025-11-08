@@ -56,6 +56,11 @@ This repository serves as an index for WebAssembly Component Model implementatio
 **Best for**: .xz files, Linux package compression
 **Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
 
+#### LZ4HC
+**Repository**: [tegmentum/lz4hc-wasm](https://github.com/tegmentum/lz4hc-wasm)
+**Best for**: Better compression than LZ4, same fast decompression
+**Compression Ratio**: ★★★★☆ | **Speed**: ★★★☆☆ (compress) / ★★★★★ (decompress)
+
 ### 📦 Repository Created (Implementation Needed)
 
 #### LZO
