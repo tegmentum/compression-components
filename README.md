@@ -36,31 +36,25 @@ This repository serves as an index for WebAssembly Component Model implementatio
 **Best for**: .gz files, tar.gz archives, HTTP compression
 **Compression Ratio**: ★★★★☆ | **Speed**: ★★★☆☆
 
-### 🔧 Need Implementation/Fixes
-
 #### Snappy
 **Repository**: [tegmentum/snappy-wasm](https://github.com/tegmentum/snappy-wasm)
 **Best for**: Databases (RocksDB, LevelDB), low-latency compression
 **Compression Ratio**: ★★★☆☆ | **Speed**: ★★★★★
-**Status**: CLI written, library needs fixes
 
 #### LZMA
 **Repository**: [tegmentum/lzma-wasm](https://github.com/tegmentum/lzma-wasm)
 **Best for**: 7-Zip archives, maximum compression
 **Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
-**Status**: Needs CLI
 
 #### LZMA2
 **Repository**: [tegmentum/lzma2-wasm](https://github.com/tegmentum/lzma2-wasm)
 **Best for**: XZ archives, modern LZMA variant
 **Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
-**Status**: Needs CLI
 
 #### XZ
 **Repository**: [tegmentum/xz-wasm](https://github.com/tegmentum/xz-wasm)
 **Best for**: .xz files, Linux package compression
 **Compression Ratio**: ★★★★★ | **Speed**: ★★☆☆☆
-**Status**: Needs CLI
 
 ### 📦 Repository Created (Implementation Needed)
 
